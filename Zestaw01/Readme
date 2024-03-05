@@ -1,0 +1,35 @@
+Kompilowanie:
+    @ Kompilacja wszystkich programów:
+        - make all
+
+Uruchamianie po kompilacji:
+    @ Uruchamianie program 1:
+        - ./z1.x
+    @ Uruchamianie program 2:
+        - ./z2.x
+    @ Uruchamianie program 3:
+        - ./z3.x
+    @ Uruchamianie program 4_1:
+        - ./z4_1.x
+    @ Uruchamianie program 4_2:
+        - ./z4_2.x
+    @ Uruchamianie program 5:
+        - ./z5.x
+
+Kompilacja i uruchamianie:
+    @ Zadanie 1:
+        - make run1
+    @ Zadanie 2:
+        - make run2
+    @ Zadanie 3:
+        - make run3
+    @ Zadanie 4_1:
+        - make run4_1
+    @ Zadanie 4_2:
+        - make run4_2
+    @ Zadanie 5:
+        - make run5
+
+Czyszczenie katalogu:
+    @ Usuwanie plików wykonywalnych:
+        - make clean
