@@ -1,13 +1,13 @@
 // Mateusz Kałwa
 
 #include <iostream>
-#include <stack>
 
-template<typename S> typename S::value_type sum(S s) {
+template<typename S> typename S::value_type 
+sum(S s) {
     typename S::value_type total; 
     while(!s.is_empty())
         total+=s.pop();
-  return total;
+    return total;
 }
 
 template<typename T = int , size_t N = 100> 

@@ -12,7 +12,7 @@ void f(C<T> arg) {
     std::cout << "Argument value: " << arg.value << std::endl;
 }
 
-int main() {
+auto main() -> int {
     K<int> k;
     k.value = 10;
 
