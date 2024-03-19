@@ -1,0 +1,42 @@
+1.
+    - Polimorfizm dynamiszny:
+        @ Polimorfizm dynamiczny w C++ to możliwość wywoływania funkcji
+        na podstawie rzeczywistego typu obiektu, a nie tylko jego
+        deklarowanego typu, co umożliwia różne zachowania dla obiektów
+        różnych klas dziedziczących po wspólnej klasie bazowej.
+    - Plimorfizm statyczny:
+        @ Polimorfizm statyczny w C++ odnosi się do wywoływania funkcji
+        w zależności od deklarowanego typu obiektu, co oznacza, że wybór
+        funkcji jest dokonywany na etapie kompilacji na podstawie typu
+        wskaźnika lub referencji do obiektu, a nie na podstawie
+        rzeczywistego typu obiektu.
+    - Klasa abstrakcyjna:
+        @ Klasa abstrakcyjna w C++ to klasa, która zawiera przynajmniej
+        jedną czysto wirtualną funkcję (funkcję wirtualną zadeklarowaną
+        z użyciem słowa kluczowego virtual i bez domyślnej implementacji),
+        co uniemożliwia tworzenie instancji tej klasy. Klasa abstrakcyjna
+        służy jako interfejs, który definiuje zestaw funkcji, które muszą
+        być zaimplementowane przez klasy pochodne.
+    - Klasa wirtualna:
+        @ Klasa wirtualna w C++ to klasa, która posiada co najmniej jedną
+        funkcję wirtualną (zadeklarowaną jako virtual), co umożliwia
+        dynamiczne wiązanie metod podczas wykonania programu. Klasy
+        wirtualne często wykorzystywane są jako klasy bazowe w hierarchii
+        dziedziczenia, aby umożliwić polimorfizm.
+
+
+Polimorfizm statyczny vs. dynamiczny:
+
+Jak już wspomniałem każdy styl posiada swoje cechy, które w zależności od okoliczności
+mogą być postrzegane jako wady lub zalety. Poniżej podaję zebrane głowne właściwości każdego podejścia.
+
+1. Dziedzieczenie i funkcje wirtualne
+        1. umożliwia pracę ze zbiorami niejednorodnych obiektów i korzysta z polimorfizmu dynamicznego
+        2. wymaga wspólnej hierarchii dziedziczenia
+        3. wymusza korzystanie ze wskaźników lub referencji i funkcji wirtualnych
+        4. zazwyczaj generuje mniejszy kod.
+2. Szablony
+        1. implementuje polimorfizm statyczny
+        2. bezpiecznie obsługuje jednorodne zbiory obiektów
+        3. nie trzeba korzystać ze wskaźników i referencji ani funkcji wirtualnych
+        4. nie musimy korzystać ze wspólnej hierarchii dziedziczenia.
